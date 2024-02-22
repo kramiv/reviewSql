@@ -1,0 +1,83 @@
+To create a sql database schema, I first need to decide what sort of schema to build. 
+
+It should model the one-to-many or many-to-many relationships that are possible. 
+
+I will also try to keep it simple for now. I should practice advanced queries separately and maybe sql functions. 
+
+A simple example of many-many and 1-many:
+
+A sheet of paper with a to-do list written on it can have multiple tasks on it. This is one-many. 
+
+A given recipe on the internet can list many foods in it. But, a particular food may be in multiple recipes. This is many-many.
+
+
+
+https://stackoverflow.com/questions/31535101/relationship-with-many-to-many
+
+in this example:
+'I am trying to get a basic rails application running that helps capture the nutritional information of each food item from a list of food items. The nutritional information is stored per ingredient and calculated as the sum of individual ingredients.'
+
+
+
+going through this tutorial below using the above as personal example:
+https://www.sqlshack.com/learn-sql-create-database-create-table/
+
+recipe
+	ingredient
+		nutritional info
+		nutritional info
+	ingredient
+		nutritional info
+		nutritional info
+recipe
+	ingredient
+		nutritional info
+		nutritional info
+	ingredient
+		nutritional info
+		nutritional info
+recipe
+	ingredient
+		nutritional info
+		nutritional info
+	ingredient
+		nutritional info
+		nutritional info
+
+a single recipe has multiple ingredients
+a single ingredient will show up in multiple recipes
+(many-many)
+
+a single ingredient will have various nutritional info
+(one-many)
+
+I think this will have a normalized database. 
+
+
+
+
+
+
+
+
+
+
+todo for later reading:
+'has many through' relationship
+https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
