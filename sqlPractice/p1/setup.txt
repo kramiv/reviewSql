@@ -1,0 +1,32 @@
+Summary of this repo: go through this tutorial below with a personal example:f
+
+https://www.sqlshack.com/learn-sql-create-database-create-table/
+
+goals: 
+
+utilize:
+one-many
+many-many
+normalized database
+
+I should practice advanced queries separately and maybe sql functions. 
+
+todo for optional later reading:
+'has many through' relationship
+https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
