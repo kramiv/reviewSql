@@ -29,8 +29,8 @@ CREATE TABLE meal (
     date_of_meal date,
     servings_consumed int NOT NULL,
     CONSTRAINT meal_pk UNIQUE (id),
-	CONSTRAINT fk_recipe FOREIGN KEY (id)
-	REFERENCES recipe(id)
+    CONSTRAINT fk_recipe FOREIGN KEY (id)
+    REFERENCES recipe(id)
 );
 -- todo: do I need to add fk_recipe as a table variable above?
 
@@ -53,7 +53,7 @@ CREATE TABLE ingredient_recipe (
     recipe_id int NOT NULL,
     PRIMARY KEY (ingredient_id, recipe_id),
     CONSTRAINT ingredient_id FOREIGN KEY (ingredient_id)
-	REFERENCES ingredient(id),
+    REFERENCES ingredient(id),
     CONSTRAINT recipe_id FOREIGN KEY (recipe_id)
     REFERENCES recipe(id)
 );
