@@ -11,7 +11,7 @@ DROP TABLE IF EXISTS `recipe`;
 
 -- ingredient is many-many with recipe
 CREATE TABLE recipe (
-	id INT NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     recipe_name char(128) NOT NULL,
     minutes_of_prep decimal(10,0),
     hrs_of_prep decimal(10,1) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE recipe (
 -- could I include a constraint here to make combo of fk_recipe, date_of_meal unique, 
 -- or is that business logic?
 CREATE TABLE meal (
-	id int NOT NULL AUTO_INCREMENT,
+    id int NOT NULL AUTO_INCREMENT,
     fk_recipe int NOT NULL, 
     date_of_meal date,
     servings_consumed int NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE meal (
 
 -- ingredient is many-many with recipe
 CREATE TABLE ingredient (
-	id int NOT NULL AUTO_INCREMENT,
+    id int NOT NULL AUTO_INCREMENT,
     ingredient_name char(128) NOT NULL,
     cals_per_hundred_grams int,
     protein_grams int,
@@ -49,7 +49,7 @@ CREATE TABLE ingredient (
 
 -- ingredient is many-many with recipe
 CREATE TABLE ingredient_recipe (
-	ingredient_id int NOT NULL,
+    ingredient_id int NOT NULL,
     recipe_id int NOT NULL,
     PRIMARY KEY (ingredient_id, recipe_id),
     CONSTRAINT ingredient_id FOREIGN KEY (ingredient_id)
